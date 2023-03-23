@@ -28,9 +28,9 @@ namespace csharp_abstract_animals
             Console.WriteLine("Sto nuotando!!!");
         }
 
-        public void GetSwimmers()
+        public void GetSwimmers(TheSwimmers animal)
         {
-            Swim();
+            animal.Swim();
         }
 
     }

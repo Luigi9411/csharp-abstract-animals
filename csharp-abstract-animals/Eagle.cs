@@ -28,9 +28,9 @@ namespace csharp_abstract_animals
             Console.WriteLine("Sto volando!!!");
         }
 
-        public void GetFly()
+        public void GetFly(TheFly animal)
         {
-            Fly();
+            animal.Fly();
         }
     }
 }

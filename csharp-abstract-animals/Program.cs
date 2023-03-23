@@ -17,18 +17,18 @@ public abstract class Animal
         Sparrow sparrow = new Sparrow();
         sparrow.Eat();
         sparrow.Towards();
-        sparrow.GetFly();
+        sparrow.GetFly(sparrow);
 
         Eagle eagle = new Eagle();
         eagle.Eat();
         eagle.Towards();
-        eagle.GetFly();
+        eagle.GetFly(eagle);
 
 
         Dolphin dolphin = new Dolphin();
         dolphin.Eat();
         dolphin.Towards();
-        dolphin.GetSwimmers();
+        dolphin.GetSwimmers(dolphin);
 
         Dog dog = new Dog();
         dog.Eat();
@@ -38,8 +38,8 @@ public abstract class Animal
         puffin.Eat();
         puffin.Sleep();
         puffin.Towards();
-        puffin.GetFly();
-        puffin.GetSwimmers();
+        puffin.GetFly(puffin);
+        puffin.GetSwimmers(puffin);
 
     }
 
