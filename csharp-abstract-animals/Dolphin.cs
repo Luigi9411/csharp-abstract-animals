@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace csharp_abstract_animals
 {
-    internal class Dolphin : Animal
+    public class Dolphin : Animal, TheSwimmers
     {
         public override void Sleep()
         {
@@ -22,5 +22,16 @@ namespace csharp_abstract_animals
         {
             Console.WriteLine("Il delfino mangia Big Fruit");
         }
+
+        public void Swim()
+        {
+            Console.WriteLine("Sto nuotando!!!");
+        }
+
+        public void GetSwimmers()
+        {
+            Swim();
+        }
+
     }
 }

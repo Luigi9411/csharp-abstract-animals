@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace csharp_abstract_animals
 {
-    internal class Eagle : Animal
+    public class Eagle : Animal, TheFly
     {
         public override void Sleep()
         {
@@ -21,6 +21,16 @@ namespace csharp_abstract_animals
         public override void Eat()
         {
             Console.WriteLine("L' acquila mangia carne");
+        }
+
+        public void Fly()
+        {
+            Console.WriteLine("Sto volando!!!");
+        }
+
+        public void GetFly()
+        {
+            Fly();
         }
     }
 }

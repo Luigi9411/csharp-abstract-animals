@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace csharp_abstract_animals
 {
-    internal class Dog : Animal
+    public class Dog : Animal
     {
         public override void Sleep()
         {
