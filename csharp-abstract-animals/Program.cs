@@ -1,6 +1,34 @@
 ﻿using csharp_abstract_animals;
 using System;
 
+var sparrow = new Sparrow();
+var eagle = new Eagle();
+var  dolphin = new Dolphin();
+var dog = new Dog();
+var puffin = new Puffin();
+
+sparrow.Eat();
+sparrow.Towards();
+sparrow.GetFly(sparrow);
+Console.WriteLine();
+eagle.Eat();
+eagle.Towards();
+eagle.GetFly(eagle);
+Console.WriteLine();
+dolphin.Eat();
+dolphin.Towards();
+dolphin.GetSwimmers(dolphin);
+Console.WriteLine();
+dog.Eat();
+dog.Sleep();
+Console.WriteLine();
+puffin.Eat();
+puffin.Sleep();
+puffin.Towards();
+puffin.GetFly(puffin);
+puffin.GetSwimmers(puffin);
+Console.ReadLine();
+
 
 public abstract class Animal
 {
@@ -10,38 +38,6 @@ public abstract class Animal
 
     public abstract void Eat();
 
-
-    static void Main(string[] args)
-    {
-      
-        Sparrow sparrow = new Sparrow();
-        sparrow.Eat();
-        sparrow.Towards();
-        sparrow.GetFly(sparrow);
-
-        Eagle eagle = new Eagle();
-        eagle.Eat();
-        eagle.Towards();
-        eagle.GetFly(eagle);
-
-
-        Dolphin dolphin = new Dolphin();
-        dolphin.Eat();
-        dolphin.Towards();
-        dolphin.GetSwimmers(dolphin);
-
-        Dog dog = new Dog();
-        dog.Eat();
-        dog.Sleep();
-
-        Puffin puffin = new Puffin();
-        puffin.Eat();
-        puffin.Sleep();
-        puffin.Towards();
-        puffin.GetFly(puffin);
-        puffin.GetSwimmers(puffin);
-
-    }
 
 }
 
